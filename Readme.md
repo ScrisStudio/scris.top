@@ -1,5 +1,7 @@
 ## Will Jekyll Template - [Demo](http://willianjusten.com.br/will-jekyll-template)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/scris/scris.github.io.svg)](https://greenkeeper.io/)
+
 ![Screenshot](screenshot.png)
 
 This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
