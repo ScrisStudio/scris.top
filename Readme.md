@@ -1,7 +1,6 @@
-## Will Jekyll Template - [Demo](http://willianjusten.com.br/will-jekyll-template)
+## 使用了 Will Jekyll Template 这一个Jekyll主题。 - [Demo](http://willianjusten.com.br/will-jekyll-template)
 
-![Screenshot](screenshot.png)
-
+# 这个主题的介绍：
 This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
 
 The Theme features:
