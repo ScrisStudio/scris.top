@@ -14,7 +14,7 @@ twitter_text: ''
 
 ## 应用截图
 
-![截图1](https://raw.githubusercontent.com/scris/scris.github.io/master/assets/sc552x414.jpeg)
+![截图1](https://i.loli.net/2017/08/10/598c0400341b3.jpeg)
 
 ## 应用简介
 "PiedonPiedon" is an interesting parkour games, And it was made out by Scris Game Studio.
