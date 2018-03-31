@@ -27,4 +27,4 @@ AMAZING! LET'S PLAY IT!
 
 ## 应用下载地址
 * Windows 10 Store：[点我进入下载页面](https://www.microsoft.com/zh-cn/store/p/piedonpiedon/9nblggh52c4b#)
-* iOS App Store: [点我进入下载页面](https://itunes.apple.com/us/app/piedonpiedon-a-special-parkour-game/id1160764460?l=zh&ls=1&mt=8#)
+* iOS App Store: [点我进入下载页面](https://itunes.apple.com/us/app/piedonpiedon-a-special-parkour-game/id1160764460?l=zh&ls=1&mt=8#) (This Link is only for iOS devices)
