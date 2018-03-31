@@ -1,34 +1,17 @@
 ---
-layout: default
+layout: pure
 ---
 
-<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-    {% for post in site.posts %}
-        <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-                <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
-                    <meta itemprop="datePublished" content="{{post.date}}">
-                    <time datetime="{{ post.date | date_to_xmlschema }}">
-                        <span class="day">
-                            {{ post.date | date: "%d" }}
-                        </span>
-                        <span class="month-year">
-                            {{ post.date | date: "%B %Y" }}
-                        </span>
-                    </time>
-                </a>
-                <div class="content">
-                    <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
-                    <p class="description">
-                        {{ post.content | strip_html | truncatewords:40 }}
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="link">查看全文 {{post.title}}</a>
-                    </p>
+      <li class="item">
+          <a href="archive.html">手记</a>
+        <span>|</span>
+      </li>  
+      <li class="item">
+          <a href="project.html" rel="noopener noreferrer">常用网址</a>
+        <span>|</span>
+      </li>
+		<li class="item">
+          <a href="about.html" rel="noopener noreferrer">关于</a>
+        <span>|</span>
+      </li>
 
-                    <div class="tags">
-                        {% for tag in post.tags %}
-                            <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-        </article>
-    {% endfor %}
-</main>

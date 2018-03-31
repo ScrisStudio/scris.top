@@ -4,6 +4,7 @@ title: "Scris主站已经搬迁至Github Pages上"
 date: 2017-7-10 14:56:11 +0800
 image: '/assets/img/'
 description: 'the First Step of this Blog'
+permalink: /first/
 tags:
 - scris
 categories:

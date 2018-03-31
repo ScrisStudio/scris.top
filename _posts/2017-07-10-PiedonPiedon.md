@@ -4,6 +4,7 @@ title: "PiedonPiedon - A Special Parkour Game!"
 date: 2017-07-10 20:09:57
 image: '/assets/img/'
 description: 'Piedon-一款Unity游戏'
+permalink: /piedon/
 tags:
 - scris
 - 游戏

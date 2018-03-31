@@ -1,19 +1,55 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    {% include head.html %}
-    <body>
-        {% include svg-icons.html %}
-        {% include header-post.html %}
-        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+---
+layout: default-left
+---
 
-            <article role="article" id="scroll" class="post-content" itemprop="articleBody">
-                {{ content }}
-            </article>
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
 
-            {% include share.html %}
-            {% include author.html %}
-            {% include comments.html %}
-            {% include footer.html %}
-        </section>
-    </body>
-</html>
+<div class="post-header mb2">
+  {% if page.hide_title %}
+	<!-- title is hide -->
+  {% else %}
+  <h2 class="py2" align="center">{{ page.title }}</h1>
+  {% endif %}
+	<center>
+	  <span class="post-meta" align="center">{{ page.date | date: "%m月 %d日, %Y" }}</span><br>
+	  <span class="post-meta small" align="center">{{ minutes }} minute read</span>
+	</center>
+</div>
+
+<article class="post-content">
+  {{ content }}
+</article>
+
+{% if site.show_related_posts %}
+  <h3 class="related-post-title">Related Posts</h3>
+  {% for post in site.related_posts %}
+    <div class="post ml2">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+        <h4 class="post-title">{{ post.title }}</h4>
+        <p class="post-summary">{{ post.summary }}</p>
+      </a>
+    </div>
+  {% endfor %}
+{% endif %}
+
+
+
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        owner: 'scris',
+        repo: 'scris.github.io',
+        oauth: {
+            client_id: '0e58b64b862b449dd9ab',
+            client_secret: 'dfb6495e652d0e503cba6bfd4bf641d559c8d7e6',
+        },
+    });
+    gitment.render('gitmentContainer');
+</script>
+
+
