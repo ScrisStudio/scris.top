@@ -58,19 +58,26 @@ a {
 	text-decoration: none;
 	color: inherit;
 	outline: none;
-	-webkit-tap-highlight-color: rgba(33,212,253,0.3)
+	-webkit-tap-highlight-color: rgba(33,212,253,0.3);
+	tap-highlight-color: rgba(33,212,253,0.3)
 }
 a:hover {
 	color: #21D4FD;
 	background: -webkit-linear-gradient(30deg, #21D4FD, #3399FF);
+	background: linear-gradient(30deg, #21D4FD, #3399FF);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent
 }
 .listama {
 	color: #21D4FD;
 	background: -webkit-linear-gradient(30deg, #21D4FD, #3399FF);
+	background: linear-gradient(30deg, #21D4FD, #3399FF);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent
 }
 
 @media screen and (max-width: 620px) {
