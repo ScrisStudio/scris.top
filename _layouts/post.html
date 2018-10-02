@@ -37,19 +37,23 @@ layout: default-left
 
 
 
-<div id="gitmentContainer"></div>
+<div id="container"></div>
 <link rel="stylesheet" href="https://scris.top/css/gitment.css">
-<script src="https://scris.top/js/gitment.js"></script>
+
+
 <script>
+    var clientId = '0e58b64b862b449dd9ab'
+    var clientSecret = 'dfb6495e652d0e503cba6bfd4bf641d559c8d7e6'
     var gitment = new Gitment({
-        owner: 'ScrisStudio',
-        repo: 'scris.top',
-        oauth: {
-            client_id: '0e58b64b862b449dd9ab',
-            client_secret: 'dfb6495e652d0e503cba6bfd4bf641d559c8d7e6',
-        },
-    });
-    gitment.render('gitmentContainer');
+      id: window.location.href,
+      owner: 'ScrisStudio',
+      repo: 'scris.top',
+      oauth: {
+        client_id: clientId,
+        client_secret: clientSecret,
+      },
+    })
+    gitment.render('container')
 </script>
 
 
