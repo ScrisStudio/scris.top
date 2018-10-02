@@ -35,25 +35,17 @@ layout: default-left
   {% endfor %}
 {% endif %}
 
-
-<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
-<div id="container"></div>
-<link rel="stylesheet" href="https://scris.top/css/gitment.css">
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 
-<script>
-    var clientId = '0e58b64b862b449dd9ab'
-    var clientSecret = 'dfb6495e652d0e503cba6bfd4bf641d559c8d7e6'
-    var gitment = new Gitment({
-      id: window.location.href,
-      owner: 'ScrisStudio',
-      repo: 'scris.top',
-      oauth: {
-        client_id: clientId,
-        client_secret: clientSecret,
-      },
-    })
-    gitment.render('container')
-</script>
-
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'iFVkjIW9pORqr2vzRevrTLVn-MdYXbMMI',
+            appKey: 'cke9gIDnA5jBTGp3wS1wG3OG',
+	    placeholder: 'Write what you like'
+        })
+    </script>
 
