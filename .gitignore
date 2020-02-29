@@ -3,3 +3,5 @@ _site
 node_modules
 _drafts
 .DS_Store
+_posts/.DS_Store
+assets/.DS_Store
