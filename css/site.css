@@ -72,15 +72,11 @@ a {
 }
 
 a:hover {
-    color: #2d6fe8;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent
+    color: #2d6fe8 !important;
 }
 
 .listama {
-    color: #2d6fe8;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent
+    color: #2d6fe8 !important;
 }
 
 @media screen and (max-width: 620px) {
